@@ -1,1 +1,1 @@
-web: gunicorn carxy.wsgi
+web: gunicorn carxy.wsgi --log-file -
