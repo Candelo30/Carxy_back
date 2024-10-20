@@ -1,46 +1,33 @@
-# Byte-compiled files
+# Archivos bytecode de Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Django stuff:
+# Archivos de log y DB de Django
 *.log
-*.pot
-*.pyc
-*.pyo
-*.pyd
 db.sqlite3
-/media
-/static
 
-# Environment variables
-.env
-.env.*
+# Archivos estáticos y media
+/staticfiles/
+media/
 
-# Django secrets
-secrets.json
-
-# MySQL
-*.myd
-*.myi
-*.frm
-
-# VS Code
-.vscode/
-
-# PyCharm
-.idea/
-
-# macOS
-.DS_Store
-
-# Windows
-Thumbs.db
-Desktop.ini
-
-# Virtual Environment
+# Entorno virtual
 venv/
 ENV/
 env/
 .venv/
+
+# Variables de entorno y secretos
+.env
+.env.*
+secrets.json
+
+# VSCode y PyCharm
+.vscode/
+.idea/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -23,4 +23,9 @@ urlpatterns = [
     path("perfil/", views.PerfilView.as_view(), name="perfil"),
     path("change-password/", views.ChangePasswordView.as_view(), name="password"),
     # Incluir las rutas del router
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
